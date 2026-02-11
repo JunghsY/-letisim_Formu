@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim Formu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="form">
+      <form action="gonder.php" method="post">
+        <h2>İletişim Formu</h2>
+
+        <label for="isimsoyisim"> İsim Soyisim:</label> <br />
+        <input type="text" id="isimsoyisim" name="isim_soyisim" /> <br />
+
+        <label for="mail"> E Posta : </label> <br />
+        <input type="email" id="mail" name="e_posta" /> <br />
+
+        <label for="konu">Konu :</label> <br />
+        <input type="text" id="konu" name="konu" /> <br />
+
+        <label for="mesaj"> Mesaj : </label> <br />
+        <textarea
+          name="mesaj"
+          id="mesaj"
+          cols="30"
+          rows="10"
+          placeholder="Mesajınızı buraya yazınız..."
+        ></textarea>
+        <br />
+
+        <button type="submit" class="gonder-btn">Gönder</button>
+      </form>
+    </div>
+  </body>
+</html>
